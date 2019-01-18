@@ -237,7 +237,7 @@ body {
 .presentation {
     font-size: 1.7em;
     font-style: italic;
-    padding: 0 10px 10px 10px;
+    padding: 0 10px 10px 35px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
 
@@ -250,10 +250,27 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     width: 85%;
-    padding: 10px;
+    padding: 30px;
+    position: relative;
+    right: 750px;
+    height: 50px;
+    animation: slideCitation 0.35s forwards;
+    animation-delay: 2.2s;
+    transition-delay: 1s;
 }
+
+@keyframes slideCitation {
+    100% { right: 0; }
+    from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
 .quote .text {
-    font-size: 1.1em;
+    font-size: 1.25em;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
 .quote .author {
@@ -274,11 +291,62 @@ body {
 .team h3 {
     font-size: 1.5em;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    margin-right: 25px;
 }
-.team ul {
-}
-.team li {
-    line-height: 1.7em;
-    font-size: 1.1em;
+.team li
+{
+    line-height: 1.3em;
+    font-size: 1.5em;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    left: 200px;
+    width: 100px;
+    height: 40px;
+    position: relative;
+    animation: slideTeam 0.35s forwards;
+    transition-delay: 1s; 
+}
+
+
+.team li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.team li:nth-child(2) {
+    animation-delay: 0.3s;
+}
+.team li:nth-child(3) {
+    animation-delay: 0.5s;
+}
+.team li:nth-child(4) {
+    animation-delay: 0.7s;
+}
+.team li:nth-child(5) {
+    animation-delay: 0.9s;
+}
+.team li:nth-child(6) {
+    animation-delay: 1.1s;
+}
+.team li:nth-child(7) {
+    animation-delay: 1.3s;
+}
+.team li:nth-child(8) {
+    animation-delay: 1.5s;
+}
+.team li:nth-child(9) {
+    animation-delay: 1.7s;
+}
+.team li:nth-child(10) {
+    animation-delay: 1.9s;
+}
+.team li:nth-child(11) {
+    animation-delay: 2.1s;
+}
+
+@keyframes slideTeam {
+    100% { left: 0; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
