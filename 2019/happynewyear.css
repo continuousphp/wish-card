@@ -252,7 +252,7 @@ body {
     width: 85%;
     padding: 30px;
     position: relative;
-    right: 105%;
+    right: 120%;
     animation: slideCitation 0.35s forwards;
     animation-delay: 2.2s;
     transition-delay: 1s;
@@ -297,7 +297,7 @@ body {
     line-height: 1.7em;
     font-size: 1.5em;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-    left: 150%;
+    left: 220%;
     width: 100px;
     position: relative;
     animation: slideTeam 0.35s forwards;
